@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-headline: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-primary: #580c1e;
+  --color-primary-container: #781029;
+  --color-surface-tint: #991b3b;
+  --color-secondary: #c89e37;
+  --color-secondary-container: #d4af37;
+  --color-secondary-fixed: #f7eed2;
+  --color-secondary-fixed-dim: #e5c05d;
+  --color-on-secondary-container: #463300;
+
+  --color-surface: #faf8f5;
+  --color-surface-dim: #dbdad7;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f0;
+  --color-surface-container: #efeeeb;
+  --color-surface-container-high: #eae8e5;
+  --color-surface-container-highest: #e4e2df;
+  --color-surface-variant: #e4e2df;
+  
+  --color-on-surface: #1a1918;
+  --color-on-surface-variant: #4e4443;
+  --color-tertiary: #2a2827;
+  --color-outline: #8c716e;
+  --color-outline-variant: #e5cfcd;
+}
+
+@layer utilities {
+  .font-headline {
+    font-family: var(--font-headline);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  }
+  .ambient-shadow {
+    box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.05);
+  }
+  .ambient-shadow-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .ambient-shadow-hover:hover {
+    box-shadow: 0px 20px 40px -4px rgba(88, 12, 30, 0.12);
+    transform: translateY(-3px);
+  }
+  .gold-shimmer {
+    background: linear-gradient(135deg, #d4af37 0%, #f6e27a 50%, #c59b27 100%);
+  }
+  .gold-border {
+    border-color: rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* intl-tel-input – match the site's form fields */
+.phone-input .iti {
+  display: block;
+  width: 100%;
+  --iti-border-color: rgba(0, 0, 0, 0.08);
+  --iti-dialcode-color: #1a1918;
+  --iti-hover-color: #faf8f5;
+  --iti-dropdown-bg: #fff;
+}
+.phone-input .iti__country-container {
+  padding: 1px;
+}
+.phone-input .iti__selected-country {
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+.phone-input .iti__selected-country-primary {
+  padding: 0 6px 0 14px;
+}
+.phone-input .iti__selected-dial-code {
+  font-size: 0.875rem;
+}
+.iti__dropdown-content {
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 32px rgba(88, 12, 30, 0.12);
+  z-index: 60;
+}
+.iti__search-input {
+  font-size: 0.875rem;
+}
+.iti__country {
+  font-size: 0.8125rem;
+}
