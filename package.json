@@ -1,0 +1,63 @@
+{
+  "name": "endocon-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ENDOCON 2027 registration, payment, abstract and admin API",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "migrate": "tsx src/db/cli.ts migrate",
+    "migrate:rollback": "tsx src/db/cli.ts rollback",
+    "seed": "tsx src/db/cli.ts seed",
+    "db:fresh": "tsx src/db/cli.ts fresh",
+    "admin:create": "tsx src/scripts/create-admin.ts",
+    "seed-admins": "tsx src/scripts/seed-admins.ts",
+    "data:reset-test": "tsx src/scripts/reset-test-data.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "migrate:prod": "node dist/db/cli.js migrate",
+    "seed:prod": "node dist/db/cli.js seed",
+    "admin:create:prod": "node dist/scripts/create-admin.js",
+    "seed-admins:prod": "node dist/scripts/seed-admins.js",
+    "data:reset-test:prod": "node dist/scripts/reset-test-data.js"
+  },
+  "dependencies": {
+    "argon2": "^0.45.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.3",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "knex": "^3.3.0",
+    "multer": "^2.4.0",
+    "mysql2": "^3.24.4",
+    "nodemailer": "^10.0.10",
+    "pdfkit": "^0.20.2",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^22.20.4",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pdfkit": "^0.17.6",
+    "@types/supertest": "^7.2.1",
+    "pino-pretty": "^13.1.3",
+    "supertest": "^7.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9",
+    "vitest": "^5.0.1"
+  }
+}
