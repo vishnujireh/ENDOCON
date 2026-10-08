@@ -32,7 +32,7 @@ export const VenueSection: React.FC = () => {
             </p>
 
             {/* Travel Assistance & Hotel Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-6 border-t border-black/[0.06]">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-6 border-t border-black/[0.06]">
               <div className="bg-white p-6 rounded-2xl border border-black/[0.06] shadow-[0_8px_20px_rgba(15,23,42,0.03)]">
                 <h4 className="font-serif text-base font-bold text-[#1a1918] mb-2 flex items-center gap-2">
                   <Plane className="w-4 h-4 text-[#c89e37]" />
@@ -54,7 +54,7 @@ export const VenueSection: React.FC = () => {
                   reserving directly with ITC Sonar or ITC Royal Bengal for 30% discount.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
@@ -66,9 +66,9 @@ export const VenueSection: React.FC = () => {
                 <Compass className="w-4 h-4 text-[#d4af37]" /> Get Directions (Google Maps)
                 <ExternalLink className="w-3.5 h-3.5 ml-0.5 opacity-80" />
               </a>
-              <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white border border-black/[0.08] text-[#4e4443] text-xs font-medium shadow-2xs">
+              {/* <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white border border-black/[0.08] text-[#4e4443] text-xs font-medium shadow-2xs">
                 <PhoneCall className="w-3.5 h-3.5 text-[#580c1e]" /> Hospitality Concierge: +91 33 2345 4545
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -114,7 +114,7 @@ export const VenueSection: React.FC = () => {
                   >
                     Distance &amp; Cab
                   </button>
-                  <button
+                  {/* <button
                     onClick={() => setActiveTab('hotel')}
                     className={`transition-colors cursor-pointer ${
                       activeTab === 'hotel'
@@ -123,7 +123,7 @@ export const VenueSection: React.FC = () => {
                     }`}
                   >
                     Partner Hotels
-                  </button>
+                  </button> */}
                 </div>
 
                 {activeTab === 'overview' && (
@@ -147,20 +147,20 @@ export const VenueSection: React.FC = () => {
                   <div className="text-xs text-[#665e5d] space-y-3 font-light">
                     <div className="flex justify-between py-1.5 border-b border-black/[0.04]">
                       <span className="font-semibold text-[#1a1918]">CCU Airport:</span>
-                      <span>14 km (~25 mins via VIP Road / EM Bypass)</span>
+                      <span>16 Km (~40 Mins)</span>
                     </div>
                     <div className="flex justify-between py-1.5 border-b border-black/[0.04]">
                       <span className="font-semibold text-[#1a1918]">Howrah Railway Station:</span>
-                      <span>10 km (~30 mins via Vidyasagar Setu)</span>
+                      <span>14 Km (~50 Mins)</span>
                     </div>
                     <div className="flex justify-between py-1.5">
                       <span className="font-semibold text-[#1a1918]">Sealdah Station:</span>
-                      <span>6 km (~15 mins by app cab)</span>
+                      <span>6 Km (~25 Mins)</span>
                     </div>
                   </div>
                 )}
 
-                {activeTab === 'hotel' && (
+                {/* {activeTab === 'hotel' && (
                   <div className="text-xs text-[#665e5d] space-y-3 font-light">
                     <div className="flex justify-between py-1.5 border-b border-black/[0.04]">
                       <span className="font-semibold text-[#1a1918]">ITC Royal Bengal (5-Star):</span>
@@ -175,7 +175,7 @@ export const VenueSection: React.FC = () => {
                       <span>4 km (~10 mins drive)</span>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           </div>

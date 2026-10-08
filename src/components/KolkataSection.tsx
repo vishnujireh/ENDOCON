@@ -28,13 +28,13 @@ export const KolkataSection: React.FC = () => {
             </p>
           </div>
 
-          <button
+          {/* <button
             onClick={() => setShowGuideModal(true)}
             className="mt-4 md:mt-0 flex items-center gap-2 text-[#580c1e] font-bold text-xs uppercase tracking-wider hover:text-[#781029] transition-colors group cursor-pointer"
           >
             Explore Delegate Travel Guide
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-[#c89e37]" />
-          </button>
+          </button> */}
         </div>
 
         {/* 3 Featured Cards Grid */}

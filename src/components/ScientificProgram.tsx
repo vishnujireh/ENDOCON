@@ -53,17 +53,17 @@ export const ScientificProgram: React.FC<ScientificProgramProps> = () => {
               Program <span className="bg-gradient-to-r from-[#e9c96b] to-[#c89e37] bg-clip-text text-transparent">Highlights</span>
             </h2>
             <p className="mt-4 text-base font-light leading-relaxed text-[#fef3c7]/65">
-              Three days of intensive hands-on workshops, plenary lectures, surgical symposiums, and joint discussions.
+              Four days of intensive hands-on workshop, plenary lectures, live demonstration, and joint discussions.
             </p>
           </div>
-          <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-sm">
+          {/* <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-sm">
             <span className="font-serif text-4xl font-bold text-[#e9c96b]">{HIGHLIGHTS.length}</span>
             <span className="text-xs font-semibold uppercase leading-tight tracking-[0.16em] text-[#fef3c7]/70">
               Highlight
               <br />
               sessions
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Highlights: bento grid, the first one featured */}

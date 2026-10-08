@@ -89,7 +89,7 @@ export const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({
             </p>
           ) : (
             <p className="text-xs sm:text-sm text-[#580c1e] font-medium bg-[#580c1e]/5 py-2 px-4 rounded-full border border-[#580c1e]/10 inline-block">
-              Local Organizing &amp; Scientific Working Committee — Kolkata 2024
+              Local Organizing &amp; Scientific Working Committee - ENDOCON 2027
             </p>
           )}
         </div>

@@ -344,10 +344,9 @@ export const RegistrationSection: React.FC<RegistrationSectionProps> = ({ onSele
                       </div>
                     </div>
                   </div>
-
                   {/* Highlights */}
                   <ul className="space-y-2 text-xs text-[#4e4443] font-light mb-6">
-                    {hotel.highlights.slice(0, 3).map((h, i) => (
+                    {hotel.highlights.slice(0).map((h, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle2 className="w-3.5 h-3.5 text-[#c89e37] shrink-0" />
                         <span>{h}</span>

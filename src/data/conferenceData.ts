@@ -542,10 +542,10 @@ const HOTEL_CONTENT: AccommodationOption[] = [
     twinShare: 'INR 8,000/-',
     twinAmount: 8000,
     highlights: [
-      'Direct indoor skywalk connection to Conference Halls & Exhibition',
-      'Sumptuous buffet breakfast included at Grand Market Pavilion',
-      'Complimentary high-speed Wi-Fi & access to Kaya Kalp Spa & pool',
-      'Priority room allocation for registered conference delegates',
+      'Direct indoor connection to Conference Halls & Exhibition',
+      'Complimentary daily buffet breakfast included',
+      'Complimentary high-speed Wi-Fi',
+      'Any additional charges incurred during the stay, including extra bed, room service, laundry, minibar, additional nights, upgrades, or other personal expenses, will be borne by the guest',
     ],
   },
   {
@@ -558,10 +558,9 @@ const HOTEL_CONTENT: AccommodationOption[] = [
     twinShare: 'INR 6,500/-',
     twinAmount: 6500,
     highlights: [
-      'Dedicated complimentary luxury AC shuttles every 15 mins to venue',
       'Complimentary daily buffet breakfast included',
-      'Delegate helpdesk & express baggage assistance',
-      'Special conference negotiated corporate tariff',
+      'Delegate helpdesk',
+      'Any additional charges incurred during the stay, including extra bed, room service, laundry, minibar, additional nights, upgrades, or other personal expenses, will be borne by the guest',
     ],
   },
 ];
